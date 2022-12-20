@@ -267,7 +267,7 @@ public:
       for (size_t j = 0; j < v.sz; j++) {
           for (size_t i = 0; i < v.sz; i++)
               istr >> v.pMem[i]; // требуется оператор>> для типа T
-          istr >> '\n';
+          //istr >> '\n';
       }
       return istr;
   }
