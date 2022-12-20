@@ -165,7 +165,7 @@ public:
   T operator*(const TDynamicVector& v) noexcept(noexcept(T()))
   {
       if (sz != v.sz)
-          throw out_of_range("Vector size should be equal");
+          throw 1;// out_of_range("Vector size should be equal");
       T ans = 0;
       for (size_t i = 0; i < sz; i++)
           ans += (*this)[i] * v[i];
